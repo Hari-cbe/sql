@@ -1,4 +1,4 @@
-These are the SQL interview Questions I used for practice
+These are the SQL interview Questions I used for practice ||
 
 
 
