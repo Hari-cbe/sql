@@ -25,3 +25,5 @@ select department,
             dense_rank() over (partition by department order by salary desc) as rank_ from drop_duplicates where rn = 1
 )
 select department, salary from ranking where rank_ <= 3 order by department asc, salary desc
+
+
