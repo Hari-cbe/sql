@@ -1,3 +1,5 @@
+# Find the Next four Empty Seats (linkedin: https://www.linkedin.com/posts/devarasetty-anand-530a771a4_finding-4-consecutive-empty-seats-with-activity-7386257481640923136-gRG8?utm_source=share&utm_medium=member_desktop&rcm=ACoAADC2EUIBuIUuGCjehcsh_Ols7cwKTCRKFIY)
+
 CREATE TABLE movie(seat VARCHAR, occupancy INT);
 
 INSERT INTO movie VALUES
