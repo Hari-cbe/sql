@@ -1,4 +1,4 @@
-
+ --- (youtube : https://youtu.be/-YdAIMjHZrM?si=u2MjuqjPhdPz7wWK)
 DROP TABLE activity;
 CREATE table activity
 (
