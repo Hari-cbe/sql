@@ -62,16 +62,16 @@ select
 -- Question 2 : find For-Each Segment, the users, who made the earlist booking in Apr,2022 and also return how many total bookings the user made in April 2022
 
 
-SELECT segment,user_id,booking_date FROM(
+SELECT a.segment,a.user_id,a.booking_date,a.cnt
+FROM(
 Select 
     user_table.segment, booking_table.user_id,booking_table.booking_date,
-    
-    row_number() OVER (partition by user_table.segment ORDER BY booking_table.booking_date asc) as min_booking_date 
+    row_number() OVER (partition by user_table.segment ORDER BY booking_table.booking_date asc) as min_booking_date ,
+    COUNT(booking_table.user_id) OVER (partition by user_table.segment, booking_table.user_id) as cnt
     FROM booking_table
     JOIN user_table ON booking_table.user_id = user_table.user_id
 WHERE booking_table.booking_date BETWEEN '2022-04-01' AND '2022-04-30'
 ) a 
-JOIN booking_table 
 WHERE a.min_booking_date = 1
 
 
