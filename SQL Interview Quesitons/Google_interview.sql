@@ -47,4 +47,4 @@ select
     FROM combination_result
     WHERE seller_id not in (select distinct buyer_id from combination_result)
         AND buyer_id not in (select distinct seller_id from combination_result)
-    GROUP BY seller_id, buyer_id 
+    GROUP BY seller_id, buyer_id    
