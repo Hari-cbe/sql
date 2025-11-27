@@ -27,6 +27,8 @@ insert into matches values (3,30,15,2,0);
 insert into matches values (4,40,20,5,2);
 insert into matches values (5,35,50,1,1);
 
+--(YT : https://youtu.be/IQ4n4n-Y9z8?si=JC6xbD-r_vPnp8yo)
+
 -- Question 1
 /* Write a SQl query to find the winner in each group 
 
